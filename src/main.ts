@@ -404,7 +404,7 @@ function generateSkillCategories(): string {
 }
 
 function generateExperienceTimeline(): string {
-  return portfolioData.experience.map((exp, index) => `
+  return portfolioData.experience.map((exp, _index) => `
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
@@ -481,7 +481,6 @@ function initializeInteractions() {
     let current = ''
     sections.forEach(section => {
       const sectionTop = (section as HTMLElement).offsetTop
-      const sectionHeight = section.clientHeight
       if (scrollY >= sectionTop - 100) {
         current = section.getAttribute('id') || ''
       }
