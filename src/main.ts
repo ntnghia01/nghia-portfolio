@@ -10,7 +10,8 @@ const portfolioData = {
     location: "Ho Chi Minh City",
     linkedin: "linkedin.com/in/nghiant2611",
     github: "github.com/ntnghia01",
-    summary: "Software Engineer with over 2 years of experience in building web applications, mobile apps, and AI-powered systems. Skilled in full-stack development, system deployment, performance optimization, and designing scalable architectures. Experienced in working with cloud infrastructure and delivering end-to-end solutions from concept to production."
+    summary: "Software Engineer with over 3 years of experience in building web applications, mobile apps, and AI-powered systems. Skilled in full-stack development, system deployment, performance optimization, and designing scalable architectures. Experienced in working with cloud infrastructure and delivering end-to-end solutions from concept to production.",
+    avatar: "/myself20072025.jpg"
   },
   skills: {
     "Programming & Frameworks": ["Python (FastAPI)", "Java (Spring Boot)", "C/C++", "TypeScript", "React.js", "Next.js", "Node.js", "Express.js", "React Native", "Redux"],
@@ -161,13 +162,13 @@ function generatePortfolio() {
         <div class="hero-visual">
           <div class="hero-image-wrapper">
             <div class="hero-image">
-              <div class="hero-image-placeholder">N</div>
+              <img src="${portfolioData.personal.avatar}" alt="${portfolioData.personal.name}" />
             </div>
             <div class="floating-badge top-right">
               <div class="icon">
                 <i data-lucide="code-2" style="width: 18px; height: 18px;"></i>
               </div>
-              <span>Full-Stack Dev</span>
+              <span>Software Engineer</span>
             </div>
             <div class="floating-badge bottom-left">
               <div class="icon">
@@ -212,7 +213,7 @@ function generatePortfolio() {
 <pre><span class="keyword">const</span> <span class="property">developer</span> = {
   <span class="property">name</span>: <span class="string">"Nghia Nguyen"</span>,
   <span class="property">role</span>: <span class="string">"Software Engineer"</span>,
-  <span class="property">experience</span>: <span class="number">2</span>,
+  <span class="property">experience</span>: <span class="number">3</span>,
   <span class="property">passions</span>: [
     <span class="string">"Full-Stack Development"</span>,
     <span class="string">"AI & Machine Learning"</span>,
