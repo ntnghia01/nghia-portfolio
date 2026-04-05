@@ -16,10 +16,10 @@ const portfolioData = {
   skills: {
     "Programming & Frameworks": ["Python (FastAPI)", "Java (Spring Boot)", "C/C++", "TypeScript", "React.js", "Next.js", "Node.js", "Express.js", "React Native", "Redux"],
     "AI & Machine Learning": ["LangChain", "RAG Architecture", "OpenAI API"],
-    "Cloud Services": ["AWS", "Google Cloud", "GitHub", "Jenkins", "Vercel"],
-    "Databases": ["MSSQL", "PostgreSQL", "MongoDB", "Redis"],
-    "Third-party Integrations": ["PayOS", "Paddle", "VNPay", "Messenger", "Instagram", "WhatsApp", "Line", "Zalo", "GHN Shipping"],
-    "Others": ["Docker", "CI/CD", "GitFlow", "Postman", "Unit Testing"]
+    "Cloud Services": ["AWS", "Google Cloud", "GitHub", "Jenkins", "Vercel", "Render"],
+    "Databases": ["MSSQL", "PostgreSQL", "MySQL", "MongoDB", "Redis"],
+    "Third-party Integrations": ["PayOS", "Paddle", "VNPay", "SePay", "Messenger", "Instagram", "WhatsApp", "Line", "Zalo", "GHN Shipping"],
+    "Others": ["Docker", "CI/CD", "GitFlow", "Postman", "Unit Testing", "Sentry"]
   },
   experience: [
     {
@@ -149,10 +149,10 @@ function generatePortfolio() {
           </div>
           <div class="hero-socials">
             <a href="https://${portfolioData.personal.linkedin}" target="_blank" class="social-link" aria-label="LinkedIn">
-              <i data-lucide="linkedin" style="width: 20px; height: 20px;"></i>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
             </a>
             <a href="https://${portfolioData.personal.github}" target="_blank" class="social-link" aria-label="GitHub">
-              <i data-lucide="github" style="width: 20px; height: 20px;"></i>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
             </a>
             <a href="mailto:${portfolioData.personal.email}" class="social-link" aria-label="Email">
               <i data-lucide="mail" style="width: 20px; height: 20px;"></i>
@@ -174,7 +174,7 @@ function generatePortfolio() {
               <div class="icon">
                 <i data-lucide="brain" style="width: 18px; height: 18px;"></i>
               </div>
-              <span>AI Specialist</span>
+              <span>AI Developer</span>
             </div>
           </div>
         </div>
@@ -194,7 +194,7 @@ function generatePortfolio() {
             <p>I'm passionate about creating elegant solutions to complex problems, with a focus on clean code, performance optimization, and user experience. My experience spans from building AI chatbots to developing e-commerce platforms and mobile applications.</p>
             <div class="about-stats">
               <div class="stat-item">
-                <div class="stat-number">2+</div>
+                <div class="stat-number">3</div>
                 <div class="stat-label">Years Experience</div>
               </div>
               <div class="stat-item">
@@ -358,10 +358,10 @@ function generatePortfolio() {
         <p class="footer-text">© ${new Date().getFullYear()} Nguyen Trung Nghia. Built with passion and code.</p>
         <div class="footer-socials">
           <a href="https://${portfolioData.personal.linkedin}" target="_blank" class="footer-social-link" aria-label="LinkedIn">
-            <i data-lucide="linkedin" style="width: 20px; height: 20px;"></i>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
           </a>
           <a href="https://${portfolioData.personal.github}" target="_blank" class="footer-social-link" aria-label="GitHub">
-            <i data-lucide="github" style="width: 20px; height: 20px;"></i>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
           </a>
           <a href="mailto:${portfolioData.personal.email}" class="footer-social-link" aria-label="Email">
             <i data-lucide="mail" style="width: 20px; height: 20px;"></i>
